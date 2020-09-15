@@ -1,0 +1,34 @@
+<view class="ksc_index">
+  <!-- 搜索框 -->
+  <SearchInput></SearchInput>
+  <!-- 轮播图 -->
+  <view class="swiper_index">
+    <swiper autoplay="{{true}}" indicator-dots="{{true}}" circular="{{true}}">
+      <swiper-item wx:for="{{swiperList}}" wx:key="goods_id">
+        <navigator>
+          <image mode="widthFix" src="{{item.image_src}}" />
+        </navigator>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- 导航栏 -->
+  <view class="cate_input">
+    <navigator wx:for="{{catesList}}" wx:key="name">
+      <image mode="widthFix" src="{{item.image_src}}"/>
+    </navigator>
+  </view>
+
+  <!-- 楼层 -->
+  <view class="floor_index">
+    <view class="floor_group" wx:for="{{floorList}}" wx:for-item="item1" wx:for-index="index1" wx:key="floor_title">
+      <view class="floor_title">
+        <image mode="widthFix" src="{{item1.floor_title.image_src}}" />
+      </view>
+      <view class="floor_content" wx:for="{{item1.product_list}}" wx:for-item="item2" wx:for-index="index2" wx:key="name">
+        <navigator>
+          <image mode="{{index2===0?'widthFix':'scaleToFill'}}" src="{{item2.image_src}}"/>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>

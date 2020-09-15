@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/category/index",
+    "pages/goods_list/index",
+    "pages/goods_detail/index",
+    "pages/car/index",
+    "pages/collect/index",
+    "pages/order/index",
+    "pages/search/index",
+    "pages/user/index",
+    "pages/feedback/index",
+    "pages/login/index",
+    "pages/auth/index",
+    "pages/pay/index"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#eb4450",
+    "navigationBarTitleText": "困困商城",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#ff2d4a",
+    "backgroundColor": "#fafafa",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "icon/home.png",
+        "selectedIconPath": "icon/home-o.png"
+      },
+      {
+        "pagePath": "pages/category/index",
+        "text": "分类",
+        "iconPath": "icon/category.png",
+        "selectedIconPath": "icon/category-o.png"
+      },
+      {
+        "pagePath": "pages/car/index",
+        "text": "购物车 ",
+        "iconPath": "icon/cart.png",
+        "selectedIconPath": "icon/cart-o.png"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "我的",
+        "iconPath": "icon/my.png",
+        "selectedIconPath": "icon/my-o.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap32.json"
+}
