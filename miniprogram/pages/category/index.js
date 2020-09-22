@@ -1,4 +1,3 @@
-// pages/categoty/index.js
 import {request} from "../../request/index"
 Page({
 

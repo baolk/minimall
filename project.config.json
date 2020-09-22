@@ -19,7 +19,7 @@
     "checkSiteMap": true,
     "uploadWithSourceMap": true,
     "compileHotReLoad": false,
-    "useMultiFrameRuntime": true,
+    "useMultiFrameRuntime": false,
     "useApiHook": false,
     "babelSetting": {
       "ignore": [],
@@ -71,6 +71,13 @@
           "name": "pages/category/index",
           "pathName": "pages/category/index",
           "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/goods_list/index",
+          "pathName": "pages/goods_list/index",
+          "query": "cid=5",
           "scene": null
         }
       ]
