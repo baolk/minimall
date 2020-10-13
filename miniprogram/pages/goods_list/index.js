@@ -23,13 +23,21 @@ Page({
       },
     ]
   },
+  //接口要的参数
+  QueryParams:{
+    query:"",
+    cid:"",
+    pagenum:1,
+    pagesize:10,
+  },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.QueryParams.cid =options.cid;
   },
+
 
   handleTabsItemChange(e){
     const {index} = e.detail;
