@@ -1,2 +1,6 @@
-<!--pages/car/index.wxml-->
-<text>pages/car/index.wxml</text>
+<!-- 收货地址 -->
+<view class="revice_address_row">
+    <view class="address_btn">
+        <button bindtap="handlechooseAddress" type="primary" plain >获取收获地址</button>
+    </view>
+</view>
